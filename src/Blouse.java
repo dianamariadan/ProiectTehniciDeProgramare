@@ -1,11 +1,16 @@
 public class Blouse extends Clothes {
     @Override
-    public String name() {
+    public String getName() {
         return "Blouse";
     }
 
     @Override
-    public float price() {
+    public float getPrice() {
         return 12.0f;
+    }
+
+    @Override
+    public String getSize(){
+        return "M";
     }
 }
