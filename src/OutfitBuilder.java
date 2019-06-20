@@ -23,12 +23,18 @@ public class OutfitBuilder {
         System.out.println("Choose clothes type: ");
         Scanner scanner = new Scanner(System.in);
         String clothesType = scanner.next();
-        outfit.addItem(ClothesFactory.getClothesType(clothesType));
+        Clothes clothes = ClothesFactory.getClothesType(clothesType);
+        if(clothes != null) {
+            outfit.addItem(clothes);
+        }
 
         Shoes.showShoes();
         System.out.println("Choose shoes type: ");
         String shoesType = scanner.next();
-        outfit.addItem(ShoesFactory.getShoeType(clothesType));
+        Shoes shoes = ShoesFactory.getShoeType(shoesType);
+        if(shoes != null) {
+            outfit.addItem(shoes);
+        }
 
         return outfit;
     }
