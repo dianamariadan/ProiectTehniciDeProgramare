@@ -13,5 +13,13 @@ public class Main {
         System.out.println("Winter Outfit");
         winterOutfit.showItems();
         System.out.println("Total Cost: " + winterOutfit.getCost());
+
+        Outfit customOutfit = outfitBuilder.customOutfit();
+        System.out.println("Custom Outfit");
+        customOutfit.showItems();
+        System.out.println("Total Cost: " + customOutfit.getCost());
+
     }
+
+
 }

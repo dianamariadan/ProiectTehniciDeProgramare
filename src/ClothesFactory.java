@@ -1,5 +1,5 @@
 public class ClothesFactory {
-    public Clothes getClothesType(String clothesType){
+    public static Clothes getClothesType(String clothesType){
         switch(clothesType) {
             case "Dress":
                 return new Dress();

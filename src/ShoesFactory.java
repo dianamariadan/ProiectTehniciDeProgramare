@@ -1,6 +1,6 @@
 public class ShoesFactory {
 
-    public Shoes getShoeType(String shoeType){
+    public static Shoes getShoeType(String shoeType){
         switch(shoeType) {
             case "Sandals":
                 return new Sandals();
