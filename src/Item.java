@@ -1,4 +1,5 @@
 public interface Item {
-    String name();
-    float price();
+    String getName();
+    float getPrice();
+    String getSize();
 }

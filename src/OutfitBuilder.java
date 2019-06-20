@@ -29,6 +29,8 @@ public class OutfitBuilder {
         System.out.println("Choose shoes type: ");
         String shoesType = scanner.next();
         outfit.addItem(ShoesFactory.getShoeType(clothesType));
+
+        return outfit;
     }
 
 }
